@@ -1,0 +1,240 @@
+/* Font import and global styles */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.shopping-cart {
+  position: relative;
+  width: 1030px;
+  height: 750px;
+  margin: 80px auto;
+  background: linear-gradient(rgb(13, 21, 27), rgb(13, 7, 79));
+  box-shadow: 5px 5px 15px rgb(16, 16, 16);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 20px black, -3px -1px 10px rgb(12, 12, 13);
+}
+
+.title {
+  position: relative;
+  border-radius: 25px 0px 0;
+  background: linear-gradient(rgb(7, 7, 81), rgb(14, 13, 13));
+  bottom: -5px;
+  height: 140px;
+  border-bottom: 1px solid white;
+  padding: 50px;
+  color: #ed923c;
+  font-size: 50px;
+
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.item:nth-child(3) {
+  border-top: 1px solid #e1e8ee;
+  border-bottom: 1px solid #e1e8ee;
+}
+
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+
+.delete-btn {
+  display: inline-block;
+  cursor: pointer;
+  width: 18px;
+  height: 17px;
+  background: url("delete-icn.svg") no-repeat center;
+  margin-right: 20px;
+}
+
+.like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  display: inline-block;
+  background: url("twitter-heart.png");
+  width: 80px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.image {
+  margin-right: 50px;
+}
+
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+
+.description span {
+  display: block;
+  font-size: 14px;
+  color: #f4f7f9;
+  font-weight: 500;
+  font-size: 17px;
+  width: 150px;
+}
+
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-weight: 500;
+  margin-top: 8px;
+  color: #89ddf9;
+}
+
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+  position: relative;
+  left: 100px;
+  top: -30px;
+
+  height: 50px;
+}
+.quantity input {
+  border: none;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  color: #0c0c0c;
+  font-weight: 700;
+  border-radius: 50px;
+  background: rgb(206, 108, 72);
+}
+
+button[class*="btn"] {
+  width: 30px;
+  height: 30px;
+  background-color: #fdfdf6;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  display: flex;
+  margin-top: 15px;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+  position: relative;
+  top: -0px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 24px;
+  color: #86f9af;
+  font-weight: 700;
+  border-radius: 20px;
+  box-shadow: 10px 40px 20px black 20px 30px 40px black;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: -10px;
+  position: relative;
+  top: -5px;
+  left: -100px;
+}
+
+.ptotal {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  left: 170px;
+  top: -70px;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  position: relative;
+  bottom: -70px;
+  right: -720px;
+}
+
+#totalitem {
+  position: relative;
+  bottom: 50px;
+  right: -860px;
+  color: rgb(238, 153, 74);
+  font-size: 40px;
+  border: 1px solid rgb(228, 134, 46);
+  padding: 5px 10px;
+  font-weight: 800;
+  display: inline-block;
+  background: rgb(15, 15, 15);
+  box-shadow: 4px 5px 10px rgb(82, 82, 82), -4px -5px 10px rgb(64, 64, 64);
+  border-radius: 10px;
+}
+#cost-position {
+  color: rgb(245, 177, 52);
+  font-size: 40px;
+  margin-left: 70px;
+  position: relative;
+  bottom: -20px;
+  font-weight: 700;
+}
+.quantityitem {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  background: rgb(35, 43, 120);
+  color: rgb(241, 235, 235);
+  font-weight: 700;
+  width: 35px;
+}
+.cart-icon i {
+  position: relative;
+  top: 142px;
+  margin-left: 650px;
+  font-size: 50px;
+}
+.fa-solid{
+  color: white;
+}
+.x{font-size: 20px;
+color: white;
+  
+}
